@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #b1b2ff, #dedeff, #b1b2ff);
+    height: 100vh;
+    display: flex;
+    direction: rtl;
+    transition: background 0.6s ease, color 0.6s ease;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #3b82f6;
+}
+
+body p {
+    animation: fadein 1s ease-in-out;
+}
+
+.top-buttons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 9999;
+    animation: slidedown 1s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        scale: 1.3;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        opacity: 0;
+        transform:  translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dark-toggle {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: ease 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-toggle:hover {
+    background-color: #1e40af;
+    transform: scale(1.05);
+}
+
+body.dark-mode {
+    background: linear-gradient(to right, #1f2937, #111827);
+    color: #f3f4f6;
+}
+
+.back-home {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #1e40af;
+    transform: scale(1.05);
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9998;
+    transition: opacity 0.6s ease;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #271414, #573333, #271414);
+    color: #cb0000;
+    text-shadow: #ff3c007d 0 0 5px;
+}
+
+body.dark-mode button.game {
+    color: black;
+    text-shadow: 0 0 8px rgba(238, 225, 206, 0.659);
+    background-image: linear-gradient(135deg, #700000, #be0000, #700000);
+    background-size: 300% 100%;
+}
+
+main {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+main p {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+main button {
+    color: white;
+    width: 120px;
+    height: 60px;
+    background-size: 300% 100%;
+    background-image: linear-gradient(135deg, #005abb, #01aaff, #005abb);
+    margin-left: 10px;
+}
+
+.b6 {
+    animation: appear 1.7s ease-in-out;
+}
+
+.b5 {
+    animation: appear 2s ease-in-out;
+}
+
+.b4 {
+    animation: appear 2.3s ease-in-out;
+}
+
+.b3 {
+    animation: appear 2.6s ease-in-out;
+}
+
+.b2 {
+    animation: appear 2.9s ease-in-out;
+}
+
+.b1 {
+    animation: appear 3.2s ease-in-out;
+}
+
+@keyframes appear {
+    0% {
+        scale: 0.3;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    60% {
+        scale: 1.15;
+    }
+    65% {
+        scale: 1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+.game {
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 300ms ease;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.game:hover {
+    scale: 1.1;
+    transition: 300ms ease;
+    background-position: 100% 0;
+
+}
+
+body.dark-mode button.dark-toggle, body.dark-mode a.back-home {
+    background: rgb(115, 1, 1);
+    color: black;
+    text-shadow: 0 0 8px rgba(238, 225, 206, 0.559);
+}
+
+body.dark-mode button.dark-toggle:hover, body.dark-mode a.back-home:hover {
+    background: rgb(95, 0, 0);
+}
