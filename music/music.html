@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="music.css">
+  <script src="music.js"></script>
+  <script src="../Homepage/darkmode.js"></script>
+</head>
+
+<body>
+  <div class="top-buttons">
+    <button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+    <a href="../Homepage/Homepage.html" class="back-home">Home</a>
+  </div>
+
+
+
+  <div class="music-player">
+    <div class="sidebar">
+      <h2> Music list 🎶</h2>
+      <ul id="songList">
+        <li data-src="musics/03.Mehrad Hidden & Heen - Games.mp3">Gemes , Mehrad Hidden</li>
+        <li data-src="musics/Stars .mp3">Stars Mia Plays</li>
+        <li data-src="musics/Soghoot (BLH Remix).mp3">Soghoot</li>
+        <li data-src="https://dl.musictaj.com/song404/bahar/Oo%20Oo%20Football.mp3">Random</li>
+        <li data-src="musics/the_living tombstone_my_ordinary life.mp3">My ordinary life</li>
+        <li data-src="">example</li>
+        <li data-src="">example</li>
+        <li data-src="">example</li>
+        <li data-src="">example</li>
+        <li data-src="">example</li>
+        <li data-src="">example</li>
+      </ul>
+    </div>
+
+    <div class="player-panel">
+      <h1>Music Player</h1>
+      <audio id="audioPlayer" controls>
+        <source src="" type="audio/mpeg">
+        Error
+      </audio>
+    </div>
+
+  </div>
+</body>
+
+</html>
