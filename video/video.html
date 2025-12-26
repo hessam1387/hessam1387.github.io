@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Player</title>
+  <link rel="stylesheet" href="video.css" />
+  <script src="../Homepage/darkmode.js"></script>
+  <script src="video.js"></script>
+</head>
+
+<body>
+
+  <div class="top-buttons">
+    <button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+    <a href="../Homepage/Homepage.html" class="back-home">Home</a>
+  </div>
+
+  <div class="video-player-container">
+    <div class="video-sidebar">
+      <h2>🎬 لیست ویدیوها</h2>
+      <ul id="videoList">
+        <li data-src="">Video 1</li>
+        <li data-src="">Video 2</li>
+        <li data-src="">Video 3</li>
+        <li data-src="">Video 4</li>
+        <li data-src="videos/horse-edit-minecraft.mp4">example</li>
+        <li data-src="">Video 6</li>
+        <li data-src="">Video 7</li>
+        <li data-src="">Video 8</li>
+        <li data-src="">Video 9</li>
+      </ul>
+    </div>
+
+    <div class="video-panel">
+      <h1>Video Player</h1>
+      <video id="videoPlayer" controls>
+        <source src="" type="video/mp4">
+        Your browser can not support this video file.
+      </video>
+    </div>
+  </div>
+</body>
+
+</html>
